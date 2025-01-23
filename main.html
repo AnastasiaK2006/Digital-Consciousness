@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оцифровка сознания</title>
+    <style>
+        body {
+            font-family: 'Source Serif Pro';
+            margin: 0;
+            padding: 0;
+            background-image: url("colorkit.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            min-height: 100vh;
+            display: flex; /* Важно для flexbox-раскладки */
+            flex-direction: column; /* Вертикальное расположение элементов body */
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            font-size: 20pt;
+            color: white;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            gap: 20px;
+            flex: 1 0 auto; /* Занимает доступное пространство между header и footer */
+        }
+        .main-content {
+            display: flex;
+            width: 90%;
+            max-width: 2000px;
+            gap: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box; /* Важно для корректного расчета ширины */
+        }
+        .content-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: rgba(51, 51, 51, 0.8);
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+        .content-block .introduction {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .image-block {
+            width: 30%;
+            height: fit-content;
+            overflow: hidden;
+        }
+        .image-block img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .text-block {
+            width: 65%;
+        }
+        .audio-player {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: rgba(51, 51, 51, 0.8);
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+        audio {
+            width: 100%;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.3);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            /* position: fixed; <- Убрано */
+            /* bottom: 0; <- Убрано */
+            width: 100%;
+            flex-shrink: 0; /* Предотвращает сжатие футера */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Проблема оцифровки сознания</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="content-block">
+                <div class="text-block">
+                    <p class="introduction">Введение</p>
+                    <p>Со стремительным развитием информационных технологий, в том числе нейронных сетей, некоторые учёные задаются вопросом: “Можно ли оцифровать сознание человека?”. В данном тексте я немного затрону техническую сторону вопроса и рассмотрю проблему с философской и этической стороны. </p>
+                </div>
+                <div class="image-block">
+                    <img src="file.png" alt="Описание изображения">
+                </div>
+            </div>
+            <div class="audio-player">
+                <h3>Рекомендуется включить музыкальную композицию перед началом чтения текста</h3>
+                <audio controls>
+                    <source src="track1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="text-block">
+                    <p class="introduction">Первая проблема</p>
+                    <p>На первый взгляд, идея кажется полезной, ведь достаточно заранее перенести сознание в компьютер – и, в некоторой степени, сознание человека становится вечным. Но может ли оно чувствовать? Здесь возникает первая проблема – проблема квалиа.</p>
+                </div>
+                <div class="image-block">
+                    <img src="puzzle.png" alt="Описание изображения">
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="text-block">
+                    <p class="introduction">Квалиа</p>
+                    <p>Квалиа – это субъективные переживания, такие как, вкус шоколада и ощущение боли или чувство грусти или любви. Сложно представить, как можно объективно измерить такие переживания и затем возпроизвести их в цифровой форме. Даже если представить, что мы сможем скопировать структуру мозга и воспоминания, невозможно заставить цифровую копию чувствовать и воспринимать окружающий мир так же, как сам человек. 
+
+                        В сознании человека зашиты не только воспоминания, но и чувства и эмоции, с ними связанные. Более того, модели поведения человека меняются в течение его жизни вместе с тем, как в его сознании появляются новые качественные переживания. </p>
+                </div>
+                <div class="image-block">
+                    <img src="mental.png" alt="Описание изображения">
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="text-block">
+                    <p class="introduction">Каково быть летучей мышью?</p>
+                    <p>Для аргументации данной проблемы в пользу невозможности оцифровки сознания я бы хотела обратиться к книге Томаса Нагеля “Каково быть летучей мышью”. В произведении философ размышляет о том, что человеку не под силу испытать именно качественные переживания летучей мыши и выдвигает несколько аргументов. Во-первых, имитация поведения не является феноменальным опытом летучей мыши; соответственно, программный код не сможет быть сознанием человека, а будет лишь его неполной имитацией. Во-вторых, психологическая реальность человека отличается от реальности другого человека, а тем более другого существа. Психологической реальности у программного кода или нейросети попросту не существует. Томас Нагель делает вывод, что обладать сознанием – значит быть кем-то, но никак не имитировать его поведение. </p>
+                </div>
+                <div class="image-block">
+                    <img src="bat.png" alt="Описание изображения">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="content-block">
+                <div class="text-block">
+                    <p class="introduction">Обладает ли ваш компьютер интенциональностью?</p>
+                    <p>Перейдём ко второму вопросу. Обладает ли ваш компьютер интенциональностью? Понимает ли он смысл обрабатываемой им информации? Даже нейросетевые алгоритмы не являются настоящими мыслящими сущностями, они - лишь сложные математические модели, генерирующие ответы на основе обучения на мириадах текстовых символов. Данная проблема иллюстрируется в мысленном эксперименте Джона Сёрла “Китайская комната”. Представим, что человек, не знающий ни одного иероглифа, находится в изолированной комнате и обладает инструкцией по манипуляции иероглифами. Наблюдатель, владеющий китайским языком, через небольшое отверстие передаёт вопросы, написанные на китайском языке. Таким образом, наблюдатель может получать осмысленные ответы, как будто говорит с человеком, владеющим китайским языком. Однако никакого понимания языка внутри системы не происходит. Таким образом, мы убеждаемся в том, что копия сознания будет всего лишь имитацией сознательной деятельности человека. </p>
+                </div>
+                <div class="image-block">
+                    <img src="file.png" alt="Описание изображения">
+                </div>
+            </div>
+            <div class="audio-player">
+                <h3>Рекомендуется включить музыкальную композицию перед началом чтения текста</h3>
+                <audio controls>
+                    <source src="track1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="image-block">
+                    <img src="mental.png" alt="Описание изображения">
+                </div>
+                <div class="text-block">
+                    <p class="introduction">Связь тела и сознания</p>
+                    <p>Сознание человека неразрывно связано с его телом, так как через тело человек получает всю информацию об окружающем мире. Опыт человека в мире формируется путём взаимодействия тела с миром. Так возникает следующий вопрос: “А не потеряет ли человек что-то существенное при оцифровке сознания?”. Морис Мерло-Понти, французский философ XX века, в своей работе “Феноменология восприятия” отвергает разделение между сознанием и материей. Он утверждает, что “быть в мире” означает взаимодействовать с ним посредством тела.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="image-block">
+                    <img src="file.png" alt="Описание изображения">
+                </div>
+                <div class="text-block">
+                    <p class="introduction">Душа человека</p>
+                    <p>Пускай мы мысленно извлечём сознание из тела и оцифруем его. Душа человека останется с его телом и отделится от тела лишь после смерти. Я думаю, что можно рассматривать душу человека и квалиа (в частности, любые чувства, начиная с радости или грусти и заканчивая такими сложносоставными чувствами, как ностальгической радостью и счастливой усталостью) как неразрывно связанные понятия. Душа человека существует с его телом, а значит, что мы возвращаемся к первому и третьему аргументу – качественный опыт человека может получить лишь сам человек.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="image-block">
+                    <img src="puzzle.png" alt="Описание изображения">
+                </div>
+                <div class="text-block">
+                    <p class="introduction">Вывод</p>
+                    <p>Делая вывод, я могу сказать, что и с философской точки зрения, и с технической оцифровка сознания человека является невозможной. С этической точки зрения я считаю оцифровку сознания неприемлемой.</p>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>© 2025, Кузь Анастасия Сергеевна, Математика, 1 курс </p>
+    </footer>
+</body>
+</html>
